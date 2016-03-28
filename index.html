@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Cloth simulation</title>
-    <!--<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link href='style/style.css' rel='stylesheet' type='text/css'>
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://threejs.org/build/three.js"></script>
@@ -17,11 +18,107 @@
     <script src="cloth.js"></script>
     <script src="point_mass.js"></script>
     <script src="spring_constraint.js"></script>
+    <script src="gui_handler.js"></script>
     <script src="bend_constraint.js"></script>
     <script src="app.js"></script>
 </head>
 <body style="margin:0px;overflow: hidden;">
 
+<div class="menu">
+    <div class="menu-box">
+        <div class="header">
+            Cloth properties
+        </div>
+        <table style="width:100%">
+            <td style="width: 50%">
+                <div class="small-header">Damping</div>
+                <input id="dampingFactor" type="text" class="input-box" type="number" value="0">
+            </td>
+            <td style="width: 50%">
+                <div class="small-header">Stiffness</div>
+                <input id="stiffnessFactor" type="text" class="input-box" type="number" value="0">
+            </td>
+        </table>
+    </div>
+
+    <div class="menu-box">
+        <div class="header">
+            Cloth dimension
+        </div>
+        <table style="width:100%">
+            <td style="width: 50%">
+                <div class="small-header">X</div>
+                <input id="dimensionX" type="text" class="input-box" type="number" value="0">
+            </td>
+            <td style="width: 50%">
+                <div class="small-header">Y</div>
+                <input id="dimensionY" type="text" class="input-box" type="number" value="0">
+            </td>
+        </table>
+    </div>
+
+    <!--<div class="menu-box">-->
+        <!--<div class="header">-->
+            <!--Wind direction-->
+        <!--</div>-->
+        <!--<table style="width:100%">-->
+            <!--<td style="width: 25%">-->
+                <!--<div class="small-header">X</div>-->
+                <!--<input type="text" class="input-box" type="number" value="0">-->
+            <!--</td>-->
+            <!--<td style="width: 25%">-->
+                <!--<div class="small-header">Y</div>-->
+                <!--<input type="text" class="input-box" type="number" value="0">-->
+            <!--</td>-->
+            <!--<td style="width: 25%">-->
+                <!--<div class="small-header">Z</div>-->
+                <!--<input type="text" class="input-box" type="number" value="0">-->
+            <!--</td>-->
+            <!--<td style="width: 25%">-->
+                <!--<div class="small-header">Force</div>-->
+                <!--<input type="text" class="input-box" type="number" value="0">-->
+            <!--</td>-->
+        <!--</table>-->
+    <!--</div>-->
+
+    <div class="menu-box">
+        <div class="header">
+            Gravity
+        </div>
+        <table style="width:100%">
+            <td style="width: 33%">
+                <div class="small-header">X</div>
+                <input id="gravityX" type="text" class="input-box" type="number" value="0">
+            </td>
+            <td style="width: 33%">
+                <div class="small-header">Y</div>
+                <input id="gravityY" type="text" class="input-box" type="number" value="0">
+            </td>
+            <td style="width: 33%">
+                <div class="small-header">Z</div>
+                <input id="gravityZ" type="text" class="input-box" type="number" value="0">
+            </td>
+        </table>
+    </div>
+
+    <div class="menu-box">
+        <div class="header">
+            Selection mode
+        </div>
+        <table style="width:100%">
+            <td style="width: 53%; padding: 0px;">
+                <button id="moveCloth" class="btn" style="font-weight: 400">
+                    Move
+                </button>
+            </td>
+            <td style="width: 53%; padding: 0px;">
+                <button id="addPin" class="btn" style="font-weight: 400">
+                    Add pin
+                </button>
+            </td>
+        </table>
+    </div>
+</div>
 
 <div id="content">
 </div>

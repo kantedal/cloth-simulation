@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-/// <reference path="./tests/math/test_unit_math.ts" />
+/// <reference path="./tests/lib/test_unit_math.ts" />
 // webGL renderer test.
 /// <reference path="./tests/webgl/webgl_animation_cloth.ts" />
 /// <reference path="./tests/webgl/webgl_animation_skinning_morph.ts" />

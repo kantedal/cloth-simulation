@@ -5,6 +5,8 @@ class Renderer {
     private renderer: THREE.WebGLRenderer;
     private _scene: THREE.Scene;
     private _camera: THREE.Camera;
+    private _cameraBasePosition: THREE.Vector3;
+    private _cameraLookAt: THREE.Vector3;
     private _light: THREE.DirectionalLight;
     private _controls: THREE.OrbitControls;
 
@@ -19,17 +21,19 @@ class Renderer {
         this._camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1.1, 400);
         //this._controls = new THREE.OrbitControls( this._camera );
 
-        this._camera.position.x = 0;
-        this._camera.position.y = -15;
-        this._camera.position.z = -35;
-        this._camera.lookAt(new THREE.Vector3(0,-7,0));
+        this._camera.position.set(0,-15,-70);
+        this._cameraLookAt = new THREE.Vector3(0,-20,0);
+        this._camera.lookAt(this._cameraLookAt);
+
+        this._cameraBasePosition = new THREE.Vector3();
+        this._cameraBasePosition.copy(this._camera.position);
 
         this._light = new THREE.DirectionalLight( 0xffeeee, 0.85 );
         this._light.position.set( 1, 0.3, 0 );
         this._scene.add( this._light );
 
         var spotLight = new THREE.SpotLight( 0xffffff );
-        spotLight.position.set( 250, 250, -250 );
+        spotLight.position.set( 250, 100, -250 );
         this._scene.add( spotLight );
 
         var ambientLight = new THREE.AmbientLight( 0x707070 ); // soft white light
@@ -69,5 +73,21 @@ class Renderer {
 
     set camera(value:THREE.Camera) {
         this._camera = value;
+    }
+
+    get cameraBasePosition():THREE.Vector3 {
+        return this._cameraBasePosition;
+    }
+
+    set cameraBasePosition(value:THREE.Vector3) {
+        this._cameraBasePosition = value;
+    }
+
+    get cameraLookAt():THREE.Vector3 {
+        return this._cameraLookAt;
+    }
+
+    set cameraLookAt(value:THREE.Vector3) {
+        this._cameraLookAt = value;
     }
 }

@@ -9,8 +9,6 @@ class SpringConstraint {
     private _renderer: Renderer;
     private _restingDistance: number = 1;
     private _tearingDistance: number = 2;
-    private _stiffness: number = 0.8;
-
     private _pointMassA: PointMass;
     private _pointMassB: PointMass;
 
@@ -38,11 +36,15 @@ class SpringConstraint {
         var length = this._pointMassA.currentPos.distanceTo(this._pointMassB.currentPos);
         var offset = delta.multiplyScalar(length - this._restingDistance);
 
+        var multiplier = 0.5;
+        if (this._pointMassA.isAttatchment || this._pointMassB.isAttatchment)
+            multiplier = 1;
+
         if (!this._pointMassA.isAttatchment)
-            this._pointMassA.currentPos.add(offset.clone().multiplyScalar(0.5));
+            this._pointMassA.currentPos.add(offset.clone().multiplyScalar(multiplier));
 
         if (!this._pointMassB.isAttatchment)
-            this._pointMassB.currentPos.sub(offset.clone().multiplyScalar(0.5));
+            this._pointMassB.currentPos.sub(offset.clone().multiplyScalar(multiplier));
 
         if (App.DEVELOPER_MODE) {
             this._connectorLine.geometry.vertices[0].copy(this._pointMassA.currentPos);

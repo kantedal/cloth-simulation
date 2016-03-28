@@ -2704,7 +2704,7 @@ declare module THREE {
      * @example
      * var color = new THREE.Color( 0xff0000 );
      *
-     * @see <a href="https://github.com/mrdoob/three.js/blob/master/src/math/Color.js">src/math/Color.js</a>
+     * @see <a href="https://github.com/mrdoob/three.js/blob/master/src/math/Color.js">src/lib/Color.js</a>
      */
     export class Color {
         constructor(color?: Color);
@@ -3094,7 +3094,7 @@ declare module THREE {
 
     /**
      *
-     * @see <a href="https://github.com/mrdoob/three.js/blob/master/src/math/Math.js">src/math/Math.js</a>
+     * @see <a href="https://github.com/mrdoob/three.js/blob/master/src/math/Math.js">src/lib/Math.js</a>
      */
     export var Math: Math;
 
@@ -3554,7 +3554,7 @@ declare module THREE {
     /**
      * Represents a spline.
      *
-     * @see <a href="https://github.com/mrdoob/three.js/blob/master/src/math/Spline.js">src/math/Spline.js</a>
+     * @see <a href="https://github.com/mrdoob/three.js/blob/master/src/math/Spline.js">src/lib/Spline.js</a>
      */
     export class Spline {
         /**
@@ -3894,7 +3894,7 @@ declare module THREE {
      * var c = new THREE.Vector3();
      * c.crossVectors( a, b );
      *
-     * @see <a href="https://github.com/mrdoob/three.js/blob/master/src/math/Vector3.js">src/math/Vector3.js</a>
+     * @see <a href="https://github.com/mrdoob/three.js/blob/master/src/math/Vector3.js">src/lib/Vector3.js</a>
      *
      * ( class Vector3 implements Vector<Vector3> )
      */

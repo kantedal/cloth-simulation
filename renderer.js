@@ -15,15 +15,16 @@ var Renderer = (function () {
         this._scene = new THREE.Scene();
         this._camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1.1, 400);
         //this._controls = new THREE.OrbitControls( this._camera );
-        this._camera.position.x = 0;
-        this._camera.position.y = -15;
-        this._camera.position.z = -35;
-        this._camera.lookAt(new THREE.Vector3(0, -7, 0));
+        this._camera.position.set(0, -15, -70);
+        this._cameraLookAt = new THREE.Vector3(0, -20, 0);
+        this._camera.lookAt(this._cameraLookAt);
+        this._cameraBasePosition = new THREE.Vector3();
+        this._cameraBasePosition.copy(this._camera.position);
         this._light = new THREE.DirectionalLight(0xffeeee, 0.85);
         this._light.position.set(1, 0.3, 0);
         this._scene.add(this._light);
         var spotLight = new THREE.SpotLight(0xffffff);
-        spotLight.position.set(250, 250, -250);
+        spotLight.position.set(250, 100, -250);
         this._scene.add(spotLight);
         var ambientLight = new THREE.AmbientLight(0x707070); // soft white light
         this.scene.add(ambientLight);
@@ -53,6 +54,26 @@ var Renderer = (function () {
         },
         set: function (value) {
             this._camera = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Renderer.prototype, "cameraBasePosition", {
+        get: function () {
+            return this._cameraBasePosition;
+        },
+        set: function (value) {
+            this._cameraBasePosition = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Renderer.prototype, "cameraLookAt", {
+        get: function () {
+            return this._cameraLookAt;
+        },
+        set: function (value) {
+            this._cameraLookAt = value;
         },
         enumerable: true,
         configurable: true

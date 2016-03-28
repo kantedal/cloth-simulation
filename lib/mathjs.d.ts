@@ -475,11 +475,11 @@ declare module mathjs {
 
         /**
          * Wrap any value in a chain, allowing to perform chained operations on the value.
-         * All methods available in the math.js library can be called upon the chain, and then will be evaluated with the value itself as first argument. The chain can be closed by executing chain.done(), which returns the final value.
+         * All methods available in the lib.js library can be called upon the chain, and then will be evaluated with the value itself as first argument. The chain can be closed by executing chain.done(), which returns the final value.
          * The chain has a number of special functions:
          * done() Finalize the chain and return the chain's value.
          * valueOf() The same as done()
-         * toString() Executes math.format() onto the chain's value, returning a string representation of the value.
+         * toString() Executes lib.format() onto the chain's value, returning a string representation of the value.
          */
         chain(value?: any): IMathJsChain;
 
@@ -499,12 +499,12 @@ declare module mathjs {
         fraction(numerator: number|string|MathArray|Matrix, denominator?: number|string|MathArray|Matrix): Fraction|MathArray|Matrix;
 
         /**
-         * Create an index. An Index can store ranges having start, step, and end for multiple dimensions. Matrix.get, Matrix.set, and math.subset accept an Index as input.
+         * Create an index. An Index can store ranges having start, step, and end for multiple dimensions. Matrix.get, Matrix.set, and lib.subset accept an Index as input.
          */
         index(...ranges: any[]): Index;
 
         /**
-         * Create a Matrix. The function creates a new math.type.Matrix object from an Array. A Matrix has utility functions
+         * Create a Matrix. The function creates a new lib.type.Matrix object from an Array. A Matrix has utility functions
          * to manipulate the data in the matrix, like getting the size and getting or setting values in the matrix. Supported
          * storage formats are 'dense' and 'sparse'.
          */
@@ -518,7 +518,7 @@ declare module mathjs {
         number(unit: Unit, valuelessUnit: Unit|string): number|MathArray|Matrix;
 
         /**
-         * Create a Sparse Matrix. The function creates a new math.type.Matrix object from an Array. A Matrix has utility
+         * Create a Sparse Matrix. The function creates a new lib.type.Matrix object from an Array. A Matrix has utility
          * functions to manipulate the data in the matrix, like getting the size and getting or setting values in the matrix.
          * @param data A two dimensional array
          */
@@ -531,7 +531,7 @@ declare module mathjs {
         string(value: any): string|MathArray|Matrix;
 
         /**
-         * Create a unit. Depending on the passed arguments, the function will create and return a new math.type.Unit object.
+         * Create a unit. Depending on the passed arguments, the function will create and return a new lib.type.Unit object.
          * When a matrix is provided, all elements will be converted to units.
          */
         unit(unit: string): Unit;
@@ -550,7 +550,7 @@ declare module mathjs {
         eval(exprs: MathExpression[], scope?: any): any;
 
         /**
-         * Retrieve help on a function or data type. Help files are retrieved from the documentation in math.expression.docs.
+         * Retrieve help on a function or data type. Help files are retrieved from the documentation in lib.expression.docs.
          */
         help(search: any): Help;
 
@@ -561,7 +561,7 @@ declare module mathjs {
         parse(exprs: MathExpression[], options?: any): MathNode[];
 
         /**
-         * Create a parser. The function creates a new math.expression.Parser object.
+         * Create a parser. The function creates a new lib.expression.Parser object.
          */
         parser(): Parser;
 
@@ -703,7 +703,7 @@ declare module mathjs {
          * @param value An array, matrix, or string
          * @param index An index containing ranges for each dimension
          * @param replacement An array, matrix, or scalar. If provided, the subset is replaced with replacement. If not provided, the subset is returned
-         * @param defaultValue Default value, filled in on new entries when the matrix is resized. If not provided, math.matrix elements will be left undefined. Default value: undefined.
+         * @param defaultValue Default value, filled in on new entries when the matrix is resized. If not provided, lib.matrix elements will be left undefined. Default value: undefined.
          */
         subset(value: MathArray|Matrix|string, index: Index, replacement?: any, defaultValue?: any): MathArray|Matrix|string;
 
@@ -943,8 +943,8 @@ declare module mathjs {
          * 'unbiased' (default) The sum of squared errors is divided by (n - 1)
          * 'uncorrected' The sum of squared errors is divided by n
          * 'biased' The sum of squared errors is divided by (n + 1)
-         * Note that older browser may not like the variable name var. In that case, the function can be called as math['var'](...)
-         * instead of math.var(...).
+         * Note that older browser may not like the variable name var. In that case, the function can be called as lib['var'](...)
+         * instead of lib.var(...).
          */
         var(...args: (Number|BigNumber|Fraction)[]): any;
         var(array: MathArray|Matrix, normalization?: string): any;
@@ -1332,7 +1332,7 @@ declare module mathjs {
          * Example:
          *
          * ```
-         * var node = math.parse('x^2 + x/4 + 3*y');
+         * var node = lib.parse('x^2 + x/4 + 3*y');
          * var filtered = node.filter(function (node) {
                   * return node.isSymbolNode && node.name == 'x';
                  * });
@@ -1360,7 +1360,7 @@ declare module mathjs {
          * Recursively traverse all nodes in a node tree. Executes given callback for this node and each of its child nodes. Similar to Array.forEach, except recursive. The callback function is a mapping function accepting a node, and returning a replacement for the node or the original node. Function callback is called as callback(node: Node, path: string, parent: Node) for every node in the tree. Parameter path is a string containing a relative JSON Path. Example:
          *
          * ```
-         * var node = math.parse('3 * x + 2');
+         * var node = lib.parse('3 * x + 2');
          * node.traverse(function (node, path, parent) {
                 * switch (node.type) {
                 * case 'OperatorNode': console.log(node.type, node.op);    break;
@@ -1836,7 +1836,7 @@ declare module mathjs {
          * @param value An array, matrix, or string
          * @param index An index containing ranges for each dimension
          * @param replacement An array, matrix, or scalar. If provided, the subset is replaced with replacement. If not provided, the subset is returned
-         * @param defaultValue Default value, filled in on new entries when the matrix is resized. If not provided, math.matrix elements will be left undefined. Default value: undefined.
+         * @param defaultValue Default value, filled in on new entries when the matrix is resized. If not provided, lib.matrix elements will be left undefined. Default value: undefined.
          */
         subset(index: Index, replacement?: any, defaultValue?: any): IMathJsChain;
 
@@ -2017,8 +2017,8 @@ declare module mathjs {
          * 'unbiased' (default) The sum of squared errors is divided by (n - 1)
          * 'uncorrected' The sum of squared errors is divided by n
          * 'biased' The sum of squared errors is divided by (n + 1)
-         * Note that older browser may not like the variable name var. In that case, the function can be called as math['var'](...)
-         * instead of math.var(...).
+         * Note that older browser may not like the variable name var. In that case, the function can be called as lib['var'](...)
+         * instead of lib.var(...).
          */
         var(normalization?: string): IMathJsChain;
 
