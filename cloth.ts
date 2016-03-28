@@ -17,8 +17,10 @@ class Cloth {
     private _pointMesh: THREE.Mesh[];
     private _constraints: SpringConstraint[];
     private _bendConstraints: BendConstraint[];
-    private _gravity: THREE.Vector3;
     private _clothMesh: THREE.Mesh;
+    private _gravity: THREE.Vector3;
+    private _windDirection: THREE.Vector3;
+    private _windForce: number;
 
     private _dampingFactor: number = 0.03;
     private _stiffnessFactor: number = 0.5;
@@ -27,7 +29,10 @@ class Cloth {
         this._dimensionX = dimX;
         this._dimensionY = dimY;
         this._renderer = renderer;
+
         this._gravity = new THREE.Vector3(0,-9.82,0);
+        this._windDirection = new THREE.Vector3(1,0,0);
+        this._windForce = 10;
 
         this.generateCloth();
     }
@@ -45,7 +50,7 @@ class Cloth {
         var cloth_material = new THREE.MeshPhongMaterial({
             side: THREE.DoubleSide,
             color: 0x444499,
-            specular: 0xcccccc,
+            specular: 0x222222,
             shininess: 1000
         });
         var cloth_geometry = new THREE.PlaneGeometry( this._dimensionX-1, this._dimensionY-1, this._dimensionX-1, this._dimensionY-1 );
@@ -140,9 +145,11 @@ class Cloth {
 
             this._clothMesh.geometry.verticesNeedUpdate = true;
 
+
             for (var i = 0; i < this._points.length; i++) {
                 var point = this._points[i];
                 if (!point.isAttatchment) {
+                    //point.constraintForce = this._windDirection.multiplyScalar(this._windDirection.dot())
                     var acceleration = this._gravity.clone().add(point.constraintForce);
                     var velocity = point.currentPos.clone().sub(point.lastPos);
                     point.lastPos = point.currentPos.clone();

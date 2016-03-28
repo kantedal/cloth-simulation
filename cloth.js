@@ -15,6 +15,8 @@ var Cloth = (function () {
         this._dimensionY = dimY;
         this._renderer = renderer;
         this._gravity = new THREE.Vector3(0, -9.82, 0);
+        this._windDirection = new THREE.Vector3(1, 0, 0);
+        this._windForce = 10;
         this.generateCloth();
     }
     Cloth.prototype.generateCloth = function () {
@@ -28,7 +30,7 @@ var Cloth = (function () {
         var cloth_material = new THREE.MeshPhongMaterial({
             side: THREE.DoubleSide,
             color: 0x444499,
-            specular: 0xcccccc,
+            specular: 0x222222,
             shininess: 1000
         });
         var cloth_geometry = new THREE.PlaneGeometry(this._dimensionX - 1, this._dimensionY - 1, this._dimensionX - 1, this._dimensionY - 1);
@@ -103,6 +105,7 @@ var Cloth = (function () {
             for (var i = 0; i < this._points.length; i++) {
                 var point = this._points[i];
                 if (!point.isAttatchment) {
+                    //point.constraintForce = this._windDirection.multiplyScalar(this._windDirection.dot())
                     var acceleration = this._gravity.clone().add(point.constraintForce);
                     var velocity = point.currentPos.clone().sub(point.lastPos);
                     point.lastPos = point.currentPos.clone();

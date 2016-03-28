@@ -2,167 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="152d31cb-5cb1-475b-98f8-92edb95f4d3f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/cloth_simulation.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bend_constraint.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bend_constraint.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bend_constraint.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloth.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloth.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gui_handler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gui_handler.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gui_handler.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/MediaStream.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/RTCPeerConnection.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jquery.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/mathjs.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/matrix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/matrix.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/matrix.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/noisejs.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/peerjs.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/stats.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/vector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/vector.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/vector.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/point_mass.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/point_mass.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/point_mass.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/renderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/renderer.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/renderer.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring_constraint.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring_constraint.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring_constraint.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/detector.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_camera_orthographic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_camera_orthographic.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_camera_orthographic.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_geometry_cube.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_geometry_cube.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_geometry_cube.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_interactive_cubes_tween.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_interactive_cubes_tween.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_interactive_cubes_tween.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_lights_pointlights.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_lights_pointlights.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_lights_pointlights.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_materials.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_materials.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_materials.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_particles_floor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_particles_floor.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/canvas/canvas_particles_floor.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/css3d/css3d_periodictable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/css3d/css3d_periodictable.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/css3d/css3d_periodictable.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/css3d/css3d_sprites.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/css3d/css3d_sprites.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/css3d/css3d_sprites.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/examples/controls/vrcontrols.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/examples/controls/vrcontrols.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/examples/controls/vrcontrols.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/examples/detector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/examples/detector.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/examples/detector.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/examples/effects/vreffect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/examples/effects/vreffect.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/examples/effects/vreffect.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/math/test_unit_math.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/math/test_unit_math.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/math/test_unit_math.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/three-tests-setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/three-tests-setup.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/three-tests-setup.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_animation_cloth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_animation_cloth.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_animation_cloth.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_animation_skinning_morph.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_animation_skinning_morph.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_animation_skinning_morph.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_buffergeometry.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_buffergeometry.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_buffergeometry.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_camera.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_camera.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_camera.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_custom_attributes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_custom_attributes.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_custom_attributes.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_geometries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_geometries.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_geometries.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_helpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_helpers.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_helpers.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_interactive_cubes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_interactive_cubes.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_interactive_cubes.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_interactive_raycasting_points.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_interactive_raycasting_points.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_interactive_raycasting_points.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_lensflares.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_lensflares.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_lensflares.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_lights_heimsphere.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_lights_heimsphere.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_lights_heimsphere.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_lines_colors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_lines_colors.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_lines_colors.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_loader_awd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_loader_awd.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_loader_awd.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_materials.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_materials.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_materials.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_morphtargets.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_morphtargets.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_morphtargets.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_points_billboards.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_points_billboards.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_points_billboards.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_postprocessing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_postprocessing.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_postprocessing.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_shader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_shader.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_shader.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_sprites.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_sprites.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/tests/webgl/webgl_sprites.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-FirstPersonControls.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-canvasrenderer.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-copyshader.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-css3drenderer.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-editorcontrols.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-effectcomposer.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-maskpass.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-orbitcontrols.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-projector.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-renderpass.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-shaderpass.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-tests.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-tests.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-tests.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-tests.ts.tscparams" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-trackballcontrols.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-transformcontrols.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-vrcontrols.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three-vreffect.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threejs/three.d.ts" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/MediaStream.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/RTCPeerConnection.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/peerjs.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/vector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/vector.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/vector.ts" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloth.js" afterPath="$PROJECT_DIR$/cloth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloth.js.map" afterPath="$PROJECT_DIR$/cloth.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloth.ts" afterPath="$PROJECT_DIR$/cloth.ts" />
     </list>
     <ignored path="cloth_simulation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -183,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26050422">
-              <caret line="84" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="125" selection-end-column="7" />
+            <state vertical-scroll-proportion="-1.6521739">
+              <caret line="70" column="84" selection-start-line="70" selection-start-column="84" selection-end-line="70" selection-end-column="84" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -253,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cloth.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cloth.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cloth.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.62963">
-              <caret line="91" column="65" selection-start-line="91" selection-start-column="65" selection-end-line="91" selection-end-column="65" />
+            <state vertical-scroll-proportion="1.9746835">
+              <caret line="167" column="59" selection-start-line="167" selection-start-column="59" selection-end-line="167" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -320,10 +169,10 @@
         <option value="$PROJECT_DIR$/style/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app.ts" />
-        <option value="$PROJECT_DIR$/cloth.ts" />
         <option value="$PROJECT_DIR$/gui_handler.ts" />
         <option value="$PROJECT_DIR$/bend_constraint.ts" />
         <option value="$PROJECT_DIR$/spring_constraint.ts" />
+        <option value="$PROJECT_DIR$/cloth.ts" />
       </list>
     </option>
   </component>
@@ -405,6 +254,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="FullScreen" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../soft-body-simulation" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -494,16 +344,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/point_mass.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6981132">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="n#!!doc;n#PointMass#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/renderer.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -532,14 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloth.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.62963">
-          <caret line="91" column="65" selection-start-line="91" selection-start-column="65" selection-end-line="91" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gui_handler.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -547,14 +379,6 @@
           <folding>
             <element signature="n#!!doc;n#GuiHandler#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bend_constraint.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="35" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,10 +390,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bend_constraint.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="35" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/point_mass.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6981132">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc;n#PointMass#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26050422">
-          <caret line="84" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="125" selection-end-column="7" />
+        <state vertical-scroll-proportion="-1.6521739">
+          <caret line="70" column="84" selection-start-line="70" selection-start-column="84" selection-end-line="70" selection-end-column="84" />
           <folding>
             <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -587,6 +429,14 @@
             <element signature="n#style#0;n#td#1;n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#td#1;n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloth.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9746835">
+          <caret line="167" column="59" selection-start-line="167" selection-start-column="59" selection-end-line="167" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
