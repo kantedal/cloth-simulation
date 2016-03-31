@@ -114,9 +114,11 @@ class App {
 
     mouseUp = (ev: MouseEvent) => {
         if(this._selectedPointMass != null){
-            console.log(this._guiHandler.selectionMode)
+
             if(this._guiHandler.selectionMode == GuiHandler.MOVE_CLOTH)
                 this._selectedPointMass.isAttatchment = false;
+
+            this._selectedPointMass.lastPos = this._selectedPointMass.currentPos.clone();
 
             this._selectedPointMass = null;
         }

@@ -27,9 +27,9 @@ var App = (function () {
         };
         this.mouseUp = function (ev) {
             if (_this._selectedPointMass != null) {
-                console.log(_this._guiHandler.selectionMode);
                 if (_this._guiHandler.selectionMode == GuiHandler.MOVE_CLOTH)
                     _this._selectedPointMass.isAttatchment = false;
+                _this._selectedPointMass.lastPos = _this._selectedPointMass.currentPos.clone();
                 _this._selectedPointMass = null;
             }
         };
